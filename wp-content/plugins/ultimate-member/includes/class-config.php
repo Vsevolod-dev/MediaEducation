@@ -128,12 +128,12 @@ if ( ! class_exists( 'um\Config' ) ) {
 			 * ?>
 			 */
 			$this->core_pages = apply_filters( 'um_core_pages', array(
-				'user'              => array( 'title' => __( 'User', 'ultimate-member' ) ),
-				'login'             => array( 'title' => __( 'Login', 'ultimate-member' ) ),
-				'register'          => array( 'title' => __( 'Register', 'ultimate-member' ) ),
-				'members'           => array( 'title' => __( 'Members', 'ultimate-member' ) ),
-				'logout'            => array( 'title' => __( 'Logout', 'ultimate-member' ) ),
-				'account'           => array( 'title' => __( 'Account', 'ultimate-member' ) ),
+				'user'              => array( 'title' => __( 'Профиль', 'ultimate-member' ) ),
+				'login'             => array( 'title' => __( 'Вход', 'ultimate-member' ) ),
+				'register'          => array( 'title' => __( 'Регистрация', 'ultimate-member' ) ),
+				'members'           => array( 'title' => __( 'Пользователи', 'ultimate-member' ) ),
+				'logout'            => array( 'title' => __( 'Выход', 'ultimate-member' ) ),
+				'account'           => array( 'title' => __( 'Аккаунт', 'ultimate-member' ) ),
 				'password-reset'    => array( 'title' => __( 'Изменить пароль', 'ultimate-member' ) ),
 			) );
 
@@ -179,7 +179,7 @@ if ( ! class_exists( 'um\Config' ) ) {
 				'_um_profiles_per_page_mobile'  => 6,
 				'_um_directory_header'          => __( '{total_users} Members', 'ultimate-member' ),
 				'_um_directory_header_single'   => __( '{total_users} Member', 'ultimate-member' ),
-				'_um_directory_no_users'        => __( 'We are sorry. We cannot find any users who match your search criteria.', 'ultimate-member' ),
+				'_um_directory_no_users'        => __( 'Мы сожалеем. Мы не можем найти пользователей, которые соответствуют вашим критериям поиска.', 'ultimate-member' ),
 			);
 
 			$this->core_global_meta_all = array(
@@ -248,9 +248,9 @@ if ( ! class_exists( 'um\Config' ) ) {
 				'_um_profile_cover_ratio'           => '2.7:1',
 				'_um_profile_photocorner'           => '1',
 				'_um_profile_header_bg'             => '',
-				'_um_profile_primary_btn_word'      => __( 'Update Profile', 'ultimate-member' ),
+				'_um_profile_primary_btn_word'      => __( 'Обновить профиль', 'ultimate-member' ),
 				'_um_profile_secondary_btn'         => '1',
-				'_um_profile_secondary_btn_word'    => __( 'Cancel', 'ultimate-member' ),
+				'_um_profile_secondary_btn_word'    => __( 'Отмена', 'ultimate-member' ),
 
 				/*Registration Form*/
 				'_um_register_role'                 => '0',
@@ -258,9 +258,9 @@ if ( ! class_exists( 'um\Config' ) ) {
 				'_um_register_max_width'            => '450px',
 				'_um_register_align'                => 'center',
 				'_um_register_icons'                => 'label',
-				'_um_register_primary_btn_word'     => __( 'Register', 'ultimate-member' ),
+				'_um_register_primary_btn_word'     => __( 'Регистрация', 'ultimate-member' ),
 				'_um_register_secondary_btn'        => 1,
-				'_um_register_secondary_btn_word'   => __( 'Login', 'ultimate-member' ),
+				'_um_register_secondary_btn_word'   => __( 'Вход', 'ultimate-member' ),
 				'_um_register_secondary_btn_url'    => '',
 
 				/*Login Form*/
@@ -268,17 +268,17 @@ if ( ! class_exists( 'um\Config' ) ) {
 				'_um_login_max_width'               => '450px',
 				'_um_login_align'                   => 'center',
 				'_um_login_icons'                   => 'label',
-				'_um_login_primary_btn_word'        => __( 'Login', 'ultimate-member' ),
+				'_um_login_primary_btn_word'        => __( 'Вход', 'ultimate-member' ),
 				'_um_login_forgot_pass_link'        => 1,
 				'_um_login_show_rememberme'         => 1,
 				'_um_login_secondary_btn'           => 1,
-				'_um_login_secondary_btn_word'      => __( 'Register', 'ultimate-member' ),
+				'_um_login_secondary_btn_word'      => __( 'Регистрация', 'ultimate-member' ),
 				'_um_login_secondary_btn_url'       => '',
 
 				/*Member Directory*/
 				'_um_directory_template'            => 'members',
-				'_um_directory_header'              => __( '{total_users} Members', 'ultimate-member' ),
-				'_um_directory_header_single'       => __( '{total_users} Member', 'ultimate-member' ),
+				'_um_directory_header'              => __( '{total_users} пользователей', 'ultimate-member' ),
+				'_um_directory_header_single'       => __( '{total_users} пользователя', 'ultimate-member' ),
 			) );
 
 			$this->core_form_meta['register'] = array(
@@ -525,7 +525,7 @@ if ( ! class_exists( 'um\Config' ) ) {
 				'account_tab_privacy'                   => 1,
 				'account_tab_notifications'             => 1,
 				'account_tab_delete'                    => 1,
-				'delete_account_text'                   => __('Are you sure you want to delete your account? This will erase all of your account data from the site. To delete your account enter your password below','ultimate-member'),
+				'delete_account_text'                   => __('Вы уверены, что хотите удалить свой аккаунт? Это удалит все данные вашей учетной записи с сайта. Чтобы удалить свой аккаунт, введите пароль ниже.','ultimate-member'),
 				'account_name'                          => 1,
 				'account_name_disable'                  => 0,
 				'account_name_require'                  => 1,
@@ -785,13 +785,13 @@ if ( ! class_exists( 'um\Config' ) ) {
 		 */
 		function set_core_page() {
 			$this->core_pages = apply_filters( 'um_core_pages', array(
-				'user'              => array( 'title' => __( 'User', 'ultimate-member' ) ),
-				'login'             => array( 'title' => __( 'Login', 'ultimate-member' ) ),
-				'register'          => array( 'title' => __( 'Register', 'ultimate-member' ) ),
-				'members'           => array( 'title' => __( 'Members', 'ultimate-member' ) ),
-				'logout'            => array( 'title' => __( 'Logout', 'ultimate-member' ) ),
-				'account'           => array( 'title' => __( 'Account', 'ultimate-member' ) ),
-				'password-reset'    => array( 'title' => __( 'Password Reset', 'ultimate-member' ) ),
+				'user'              => array( 'title' => __( 'Профиль', 'ultimate-member' ) ),
+				'login'             => array( 'title' => __( 'Вход', 'ultimate-member' ) ),
+				'register'          => array( 'title' => __( 'Регистрация', 'ultimate-member' ) ),
+				'members'           => array( 'title' => __( 'Пользователи', 'ultimate-member' ) ),
+				'logout'            => array( 'title' => __( 'Выход', 'ultimate-member' ) ),
+				'account'           => array( 'title' => __( 'Аккаунт', 'ultimate-member' ) ),
+				'password-reset'    => array( 'title' => __( 'Восстановить пароль', 'ultimate-member' ) ),
 			) );
 		}
 		//end class
