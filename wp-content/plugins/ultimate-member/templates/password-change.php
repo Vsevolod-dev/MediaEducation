@@ -42,7 +42,7 @@
 			<div class="um-col-alt um-col-alt-b">
 
 				<div class="um-center">
-					<input type="submit" value="<?php esc_attr_e( 'Change my password', 'ultimate-member' ); ?>" class="um-button" id="um-submit-btn" />
+					<input type="submit" value="<?php esc_attr_e( 'Изменить мой пароль', 'ultimate-member' ); ?>" class="um-button" id="um-submit-btn" />
 				</div>
 
 				<div class="um-clear"></div>

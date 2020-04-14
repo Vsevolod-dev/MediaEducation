@@ -33,9 +33,9 @@ if ( defined( 'DOING_AJAX' ) && DOING_AJAX ) {
 		<div class="um-profile-note">
 			<span>
 				<?php if ( um_profile_id() == get_current_user_id() ) {
-					_e( 'You have not made any comments.', 'ultimate-member' );
+					_e( 'Вы не сделали никаких комментариев.', 'ultimate-member' );
 				} else {
-					_e( 'This user has not made any comments.', 'ultimate-member' );
+					_e( 'Этот пользователь не сделал никаких комментариев', 'ultimate-member' );
 				} ?>
 			</span>
 		</div>

@@ -7,7 +7,8 @@
 				<div class="um-field um-field-block um-field-type_block">
 					<div class="um-field-block">
 						<div style="text-align:center;">
-							<?php _e( 'We have sent you a password reset link to your e-mail. Please check your inbox.', 'ultimate-member' ); ?>
+							<?php _e( '
+Мы отправили вам ссылку для сброса пароля на вашу электронную почту. Пожалуйста, проверьте ваш почтовый ящик.', 'ultimate-member' ); ?>
 						</div>
 					</div>
 				</div>
@@ -42,9 +43,9 @@
 						<div class="um-field-block">
 							<div style="text-align:center;">
 								<?php if ( 'expiredkey' == $_GET['updated'] ) {
-									_e( 'Your password reset link has expired. Please request a new link below.', 'ultimate-member' );
+									_e( 'Срок действия ссылки для сброса пароля истек. Пожалуйста, запросите новую ссылку ниже.', 'ultimate-member' );
 								} elseif ( 'invalidkey' == $_GET['updated'] ) {
-									_e( 'Your password reset link appears to be invalid. Please request a new link below.', 'ultimate-member' );
+									_e( 'Ваша ссылка для сброса пароля кажется недействительной. Пожалуйста, запросите новую ссылку ниже.', 'ultimate-member' );
 								} ?>
 							</div>
 						</div>
@@ -53,7 +54,7 @@
 					<div class="um-field um-field-block um-field-type_block">
 						<div class="um-field-block">
 							<div style="text-align:center;">
-								<?php _e( 'To reset your password, please enter your email address or username below', 'ultimate-member' ); ?>
+								<?php _e( 'Чтобы сбросить пароль, введите свой адрес электронной почты или имя пользователя ниже', 'ultimate-member' ); ?>
 							</div>
 						</div>
 					</div>
@@ -91,7 +92,7 @@
 				<div class="um-col-alt um-col-alt-b">
 
 					<div class="um-center">
-						<input type="submit" value="<?php esc_attr_e( 'Reset my password', 'ultimate-member' ); ?>" class="um-button" id="um-submit-btn" />
+						<input type="submit" value="<?php esc_attr_e( 'Сбросить мой пароль', 'ultimate-member' ); ?>" class="um-button" id="um-submit-btn" />
 					</div>
 
 					<div class="um-clear"></div>
